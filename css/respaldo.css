@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Body*/
+body{
+    background-color: black;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.5;
+}
+/*header*/
+.header{
+        display: flex;
+        background-color: black;
+        border-bottom: 5px solid #fff;
+        padding: 30px 30px;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+}
+
+
+.header_list {
+    display: flex;
+    list-style: none;
+}
+
+.header_item {
+    margin: 0px 15px;
+    
+}
+
+.header_links {
+    margin-left: 10px;
+    text-decoration: none;
+   color: #FFF; 
+}
+
+
+/*index*/
+.main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+}
+.PDarquitectos{
+    color: #FFF;
+}
+/*Grids*/
+
+.grid-contenedor-body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "header" 
+                         "main"   
+                         "footer";   
+}
+
+.grid-logo{
+    grid-template-columns: 20px;
+}
+.grid-header{
+    grid-area: header ; 
+}
+.grid-main{
+    grid-area: main ;
+}
+.grid-footer{
+    grid-area: footer ;
+}
+
+
+/*-----------------------------*/
+/*texto*/
+p{color: white;
+font-size: 20px;}
+/*-----------------------------*/
+/* VIDEO INICIO ----------------------------------------*/
+
+.video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px 50px 50px;
+}
+
+.video__caja {    
+    width: 100%;
+    height: 50vh;
+}
+
+.video__caja--medidas{
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+}
+
+/*body1*/
+.body1{
+    background-image: url(https://www.mediasource.mx/hubfs/blog-files/fondos-web.jpg);
+}
+
+/*-----------------------------*/
+/*texto*/
+.texto{
+    background-color: white;
+    background-size: cover;
+    padding: 30px 20px 30px 20px;
+    margin: 100px 20px;
+    width: 600px;
+    border-width: 5px;
+}
+
+
+h2{
+    color:white
+}
+h3{
+    color: white;
+}
+.texto1{
+    text-transform: uppercase;
+}
+/*-----------------------------*/
+/*hero*/
+.info_box_imag{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    left:100px;
+    background-color: black;
+    padding: 100px;
+}
+.info_box_imag_box{
+    width: 50%;
+}
+.info_box_imag_imag{
+    width: 75%;
+}
+.info_box_titulo{
+    font-size: 3rem;
+    color: #fff;
+}
+.info_box_tituloDos{
+    font-size: 15px;
+    margin-top: 15px;
+    color: #fff;
+}
+.info_box_parrafo{
+    margin-top: 15px;
+    color: #fff;
+}
+/*-----------------------------*/
+/*sobre nosotros*/
+.hero_sobre {
+    display: flex;
+    text-align: center;
+    background-color: #ffffff;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ .sobre_titulo{
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+}
+.info_box_imagSobre {
+    width: 100%;
+}
+.iconos_equipo {
+    display: flex;
+    background-color: #f8f9fd;
+    height: auto;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.icono_equipoBox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    max-height: inherit;
+    width: auto;
+    padding: 20px;
+}
+.icono_equipoContenedor{
+    width: auto;
+    height: auto;
+}
+.icono_equipoImagen{
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+    }
+.icono_equipoTitulo{
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+
+/*-----------------------------*/
+/*formulario*/
+.contact_form{
+    background-color:black;
+    background-size: cover;
+    padding: 30px 20px 30px 20px;
+    margin: 100px 20px;
+    width: 600px;
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+    line-height: 1.5;
+    font-size: 12px;
+    content: none;
+    border: none;
+
+}
+/*-----------------------------*/
+/*footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color:cadetblue;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer_contenedor {
+    display: flex;
+    align-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.footer_logoText{
+    position: relative;
+    left: 100px;
+    width: 25%;
+    padding: o;
+}
+.footer_tituloLogo{ 
+    font-size: 40PX;
+    color: #FFF;
+}
+.footer_tituloParrafo{
+    margin-top: 10PX;
+    color: rgb(221, 221, 221);
+}
+
+.footer_tituloNav{
+    color: rgb(255, 255, 255);
+}
+.footer_ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;   
+}
+
+
+.footer_menuContacto{
+    left: 100px;
+    width: 20%;
+    
+}
+.footer_copy{
+    border-top: 2px solid #fff;
+    width: 90%;
+    
+}
+.footer_copytext{
+    text-align: center;
+    color:#fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/*-----------------------------*/
+
+
+/* Estilos moviles */
+
+@media screen and (max-width: 1024px){
+    body{ background-color: black;}
+
+    .body1{ background-image: url(https://www.mediasource.mx/hubfs/blog-files/fondos-web.jpg) ;}
+    .header{
+        position: static;
+    }
+    .hero_titulo {
+        font-size: 3.5rem;
+    }
+    .hero_imagen {
+        max-height: 300px;
+    }
+    .info_box_titulo {
+        font-size: 2rem;
+    }
+    .info_box_parrafo {
+        margin-top: 4px;
+        font-size: 1rem;
+    }
+    .info_box_imag_imag {
+        width: 95%;
+    }
+
+    /* sobre nosotros */
+
+    .footer_tituloParrafo {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    body{ background-color: black;}
+
+    .body1{ background-image: url(https://www.mediasource.mx/hubfs/blog-files/fondos-web.jpg) ;}
+    .header{
+        position: static;
+    }
+
+    .box_dos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .hero_titulo {
+        font-size: 2rem;
+        left: 50px;
+    }
+    .hero_imagen {
+        max-height: 275px;
+    }
+    .hero_parrafo {
+        font-size: 0.9rem;
+        left: 50px;
+    }
+    .hero_boton_contenedor {
+        left: 50px;
+    }
+    .footer_tituloParrafo {
+        font-size: 0.7rem;
+    }
+    .footer_logoText {
+        left: 50px;
+    }
+    .footer_contenedor {
+        display: flex;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        align-items: baseline;
+        justify-content: center;
+    }
+    .footer_menu {
+        width: 25%;
+        position: relative;
+        left: 77px;
+    }
+    .info_box_titulo {
+        font-size: 1.5rem;
+    }
+    .info_box_imag {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        left: 14px;
+        background-color: #000000;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{ background-color: black;}
+
+    .body1{ background-image: url(https://www.mediasource.mx/hubfs/blog-files/fondos-web.jpg) ;}
+    .header {
+        position: static;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .header_list {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero {
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;    
+    }
+    .hero_titulo {
+        font-size: 2rem;
+        left: 0px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .hero_parrafo {
+        font-size: 0.9rem;
+        left: 0px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .hero_boton_contenedor {
+        margin-top: 10px;
+        position: relative;
+        text-align: center;
+        left: 0px;
+    }
+    .hero_imagen {
+        max-height: 205px;
+        margin: 70px;
+    }
+    .hero_box {
+        width: 90%;
+    }
+    .info_box_imag_box {
+        width: 90%;
+    }
+    .info_box_imag {
+        padding: 23px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .info_box_imag_imag {
+        width: 75%;
+        margin-top: 10px;
+    }
+    .box_repetidaTitulo {
+        font-size: 1.5rem;
+    }
+    .footer_contenedor {
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: 22px;
+    }
+    .footer_logoText {
+        left: 0px;
+        width: auto;
+    }
+    .footer_menu {
+        width: auto;
+        position: relative;
+        left: 0px;
+        margin: 10px;
+    }
+    .footer_menuEnlace {
+        width: auto;
+        position: relative;
+        left: 0px;
+        margin: 10px;
+    }
+    .footer_menuContacto {
+        width: auto;
+        position: relative;
+        left: 0px;
+        margin: 10px;
+    }
+    .footer_tituloParrafo {
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    /* sobre nosotros */
+    .sobre_titulo {
+        font-size: 2rem;
+    }
+}
+
+
+/*animacion*/
+/* ----------------------------------------------
+ * Generated by Animista on 2021-12-15 21:11:58
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+
