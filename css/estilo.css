@@ -9,7 +9,7 @@ body{
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.5;
     position: relative;
-    
+    font-size: 16px;
 }
 /*header*/
 .header{
@@ -56,6 +56,9 @@ body{
 
 .grid-contenedor-body{
     height: 100vh;
+    width: 90%;
+    max-width: 75em; 
+    margin: 20px auto;
     display: grid;
     grid-template-rows: auto;
     grid-template-areas: "header" 
@@ -114,11 +117,11 @@ h3{
 /*-----------------------------*/
 /*hero*/
 .info_box_imag{
-    display: flex;
-    align-content: center;
+    display:flex;
+    align-content: center ;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     left:100px;
     background-color: black;
     padding: 100px;
@@ -126,20 +129,26 @@ h3{
 .info_box_imag_box{
     width: 50%;
 }
+
+.image_info{
+    width: 700px;
+    height: 450px;
+}
+
 .info_box_imag_imag{
     width: 50%;
 }
 .info_box_titulo{
-    font-size: 3rem;
+    font-size: 4rem;
     color: #fff;
 }
 .info_box_tituloDos{
-    font-size: 15px;
-    margin-top: 15px;
+    font-size: 20px;
+    margin-top: 10px;
     color: #fff;
 }
 .info_box_parrafo{
-    margin-top: 15px;
+    margin-top: 10px;
     color: #fff;
 }
 /*-----------------------------*/
@@ -148,7 +157,7 @@ h3{
     display: flex;
     text-align: center;
     background-color: #ffffff;
-    height: 80vh;
+    height: 70vh;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -397,63 +406,49 @@ h3{
 /*-----------------------------*/
   /* Estilos moviles */
 
-  @media (max-width: 880px) {
-  
-      .footer-distributed{
-          font: bold 14px sans-serif;
-      }
-  
-      .footer-distributed .footer-left,
-      .footer-distributed .footer-center,
-      .footer-distributed .footer-right{
-          display: block;
-          width: 100%;
-          margin-bottom: 40px;
-          text-align: center;
-      }
-  
-      .footer-distributed .footer-center i{
-          margin-left: 0;
-      }
-  
+  @media screen and (max-width: 1200px)
+  {
+  body{ background-color: black;}
+
+  .body1{ background-image: url(https://www.mediasource.mx/hubfs/blog-files/fondos-web.jpg) ;
+            font-size: 15px;}
+  .header{
+      position: static;
+  }
+  .hero_titulo {
+      font-size: 3.5rem;
+  }
+  .hero_imagen {
+      max-height: 300px;
+  }
+  .info_box_titulo {
+      font-size: 2rem;
+  }
+  .info_box_parrafo {
+      margin-top: 4px;
+      font-size: 1rem;
+  }
+  .info_box_imag_imag {
+      width: 80%;
+  }
+  .info_box_imag {
+      padding: 23px;
+      flex-direction:column;
+      flex-wrap:wrap;
+  }
+  .image_info{
+      width: 450px;
+      height: 300px;
   }
 
 
+  /* sobre nosotros */
 
+  .footer_tituloParrafo {
+      font-size: 0.8rem;
+  }
 
-
-@media screen and (max-width: 1024px){
-    body{ background-color: black;}
-
-    .body1{ background-image: url(https://www.mediasource.mx/hubfs/blog-files/fondos-web.jpg) ;}
-    .header{
-        position: static;
-    }
-    .hero_titulo {
-        font-size: 3.5rem;
-    }
-    .hero_imagen {
-        max-height: 300px;
-    }
-    .info_box_titulo {
-        font-size: 2rem;
-    }
-    .info_box_parrafo {
-        margin-top: 4px;
-        font-size: 1rem;
-    }
-    .info_box_imag_imag {
-        width: 95%;
-    }
-
-    /* sobre nosotros */
-
-    .footer_tituloParrafo {
-        font-size: 0.8rem;
-    }
-
-}
-
+} 
 @media screen and (max-width: 768px){
     body{ background-color: black;}
 
@@ -511,13 +506,19 @@ h3{
         background-color: black;
         padding: 50px;
     }
+    .image_info{
+        width: 350px;
+        height: 300px;
+    }
+  
 }
+
 
 @media screen and (max-width: 600px){
     body{ background-color: black;}
 
     .body1{ background-image: url(https://www.mediasource.mx/hubfs/blog-files/fondos-web.jpg) ;}
-    .header {
+    .grid-header {
         position: static;
         flex-wrap: wrap;
         flex-direction: column;
@@ -605,11 +606,18 @@ h3{
         margin: 10px;
     }
 
+    .image_info{
+        width: 300px;
+        height: 150px;
+    }
+
     /* sobre nosotros */
     .sobre_titulo {
         font-size: 2rem;
     }
 }
+
+
 
 
 /*animacion*/

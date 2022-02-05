@@ -98,20 +98,20 @@ body {
 }
 
 .grid-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  grid-row: 1;
+  grid-column: 1;
   grid-area: header;
 }
 
 .grid-main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
   grid-area: main;
 }
 
 .grid-footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  grid-row: 3;
+  grid-column: 1;
   grid-area: footer;
 }
 
@@ -165,6 +165,11 @@ h3 {
 
 .info_box_imag_box {
   width: 50%;
+}
+
+.image_info{
+  width: 700px;
+  height: 450px;
 }
 
 .info_box_imag_imag {
@@ -785,4 +790,3 @@ section {
     font-size: 2rem;
   }
 }
-/*# sourceMappingURL=main.css.map */
